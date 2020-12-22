@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pwa-task-manager';
+var CACHE_NAME = 'simple-pwa';
 var urlsToCache = [
   '/',
 //You can add more routes if you wish.Mine is a simple one therefore am caching '/' only
@@ -33,7 +33,7 @@ self.addEventListener('fetch', event => {
 
 // Update a service worker
 self.addEventListener('activate', event => {
-  var cacheWhitelist = ['pwa-task-manager'];
+  var cacheWhitelist = ['sinple-pwa'];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
