@@ -12,10 +12,36 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
+    <style>
+      html, body
+      {
+      height: 100%;
+      margin:0;
+      padding:0;
+      }
+
+      .division {
+      height: 100%;
+      width:100%;
+      }
+
+      .divisionimg {
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="division">
+        <img class="divisionimg" src="logo192.png"/>
+      </div>
+    </div>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
